@@ -1,0 +1,25 @@
+{
+  "name": "counter_app_tests",
+  "version": "1.0.0",
+  "description": "Welcome to the Counter App Cypress Tests repository! This project contains end-to-end tests for a counter application using Cypress. Whether you're new to Cypress or want to explore testing scenarios for a counter app, you'll find valuable examples and best practices here.",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run --spec 'cypress/e2e/*' --reporter json --browser chrome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariiakhairi/counter_app_tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariiakhairi/counter_app_tests/issues"
+  },
+  "homepage": "https://github.com/mariiakhairi/counter_app_tests#readme",
+  "dependencies": {
+    "cypress": "^13.6.1",
+    "cypress-mochawesome-reporter": "^3.7.0",
+    "prettier": "^3.1.1"
+  }
+}
