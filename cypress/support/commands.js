@@ -23,3 +23,22 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.Commands.add("checkResult", (expectedResult) => {
+  cy.get("h2").then((header) => {
+    expect(header.text()).contains(expectedResult);
+  });
+});
+Cypress.Commands.add("clickCheckResult", (buttonValue, expectedResult) => {
+  cy.get("button").contains(buttonValue).click({ force: true });
+  cy.checkResult(expectedResult);
+});
+
+Cypress.Commands.add("clickButton", (buttonValue) => {
+  cy.get("button").contains(buttonValue).click({ force: true });
+});
+
+Cypress.Commands.add("resetCheckResult", () => {
+  cy.get("button").contains("Reset").click({ force: true });
+  cy.wait(500);
+  cy.checkResult(10);
+});

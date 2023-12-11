@@ -4,7 +4,8 @@
   "description": "Welcome to the Counter App Cypress Tests repository! This project contains end-to-end tests for a counter application using Cypress. Whether you're new to Cypress or want to explore testing scenarios for a counter app, you'll find valuable examples and best practices here.",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run --spec 'cypress/e2e/*' --reporter cypress-mochawesome-reporter --browser chrome"
+    "test": "cypress run --spec 'cypress/e2e/*' --reporter cypress-mochawesome-reporter  --browser chrome > ./cypress/reports/output.txt",
+    "open": "cypress open"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,10 @@
   "dependencies": {
     "cypress": "^13.6.1",
     "cypress-mochawesome-reporter": "^3.7.0",
+    "lodash": "^4.17.21",
     "prettier": "^3.1.1"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.202"
   }
 }
