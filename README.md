@@ -9,8 +9,7 @@ Welcome to the Counter App Cypress Tests repository! This project contains end-t
 - [Test Scenarios](#test-scenarios)
 - [Setup](#setup)
 - [Running the Tests](#running-the-tests)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Introduction
 
@@ -21,8 +20,9 @@ This project demonstrates the usage of Cypress for testing a simple counter appl
 The repository is organized as follows:
 
 - `cypress/`: Contains the Cypress test files.
-  - `fixtures/`: Stores test data and sample payloads.
   - `e2e/`: Holds test files, including sample counter app tests.
+  - `fixtures/`: Stores test data and sample payloads.
+  - `reports/`: Contains sample report files.
   - `support/`: Contains additional support files and utilities.
 - `package.json`: Node.js project configuration.
 
